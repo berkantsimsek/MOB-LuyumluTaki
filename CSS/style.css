@@ -1,4 +1,4 @@
-/* Genel Ayarlar */
+/* Genel Ayarlar kısmı burası */
 * {
     margin: 0;
     padding: 0;
@@ -66,7 +66,7 @@ header {
     text-decoration: none;
 }
 
-/* Ana sayfa bölümü */
+/* Ana sayfa bölümü css kısmı */
 .home-section {
     position: relative;
     height: 400px;
@@ -112,7 +112,7 @@ header {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
-/* Ürün Bölümleri */
+/* Ürün Bölümleri ürünlerin kısmı */
 .products-section {
     padding: 50px 20px;
     text-align: center;
@@ -184,7 +184,7 @@ header {
     margin-bottom: 20px;
 }
 
-/* Harita Bölümü */
+/* Harita Bölümü şekil kısmı */
 .map-section {
     text-align: center;
     padding: 40px 20px;
@@ -212,7 +212,7 @@ header {
     border: 0;
 }
 
-/* Sepet Alanı */
+/* Sepet Alanı boyutları burada */
 #cart {
     width: 300px;
     padding: 15px;
@@ -379,7 +379,7 @@ footer {
     color: #ccc;
 }
 
-/* 🆕 Mobil uyumluluk için güncellenmiş media query */
+/* Mobil uyumluluk için güncellenmiş media query */
 @media (max-width: 768px) {
     body {
         font-size: 16px;
@@ -406,8 +406,8 @@ footer {
         margin: 10px 0;
     }
 
-    /* 🔧 Ürün kartları mobilde 2'li satırlar */
+    /* Ürün kartları mobilde 2'li satırlar */
     .products-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
