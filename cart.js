@@ -6,12 +6,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const cartSidebar = document.getElementById("cart");
   const closeCartButton = document.getElementById("close-cart");
 
-  // Sepet yan panelini aç/kapat
+  // Sepet yan panelini aç/kapat kısmı burada oldu
   cartToggle.addEventListener("click", function () {
     cartSidebar.classList.toggle("active");
   });
 
-  // Sepet yan panelini kapat
+  // Sepet yan panelini kapat tıklayınca kapanıyor
   closeCartButton.addEventListener("click", function () {
     cartSidebar.classList.remove("active");
   });
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
       totalPrice += price;
       cartItems.push({ name: productName, price: price });
 
-      // Sepete ürün ekleme
+      // Sepete ürün eklemediğimiz kısım
       let cartItemsElement = document.getElementById("cart-items");
       let newItem = document.createElement("li");
       newItem.innerHTML = `${productName} - ₺${price.toFixed(2)} 
@@ -32,13 +32,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
       cartItemsElement.appendChild(newItem);
 
-      // Toplam fiyatı güncelle
+      // Toplam fiyatı güncelle totalden fiyat düşüyor
       document.getElementById("total-price").textContent = totalPrice.toFixed(2);
 
-      // Sepet sayısını güncelle
+      // Sepet sayısını güncelle sonra sepet burada güncelleniyor
       document.getElementById("cart-count").textContent = cartItems.length;
 
-      // Silme işlemi
+      // Silme işlemi buradan yapılıyor
       newItem.querySelector(".delete-item").addEventListener("click", function () {
         totalPrice -= price;
         document.getElementById("total-price").textContent = totalPrice.toFixed(2);
